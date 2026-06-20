@@ -1,10 +1,11 @@
 from groq import Groq
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-
+api_key = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY")
+client = Groq(api_key=api_key)
 VALID_PERSONAS = ["Technical Expert", "Frustrated User", "Business Executive"]
 
 def detect_persona(user_message: str) -> str:
@@ -30,6 +31,7 @@ Respond with ONLY the persona name, exactly as written above. No explanation, no
         raw_output = response.choices[0].message.content.strip()
     except Exception:
         return "Frustrated User"  # safe fallback if API call fails
+    
 
     for persona in VALID_PERSONAS:
         if persona.lower() in raw_output.lower():

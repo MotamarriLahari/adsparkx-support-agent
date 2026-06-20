@@ -1,9 +1,11 @@
 from groq import Groq
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+api_key = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY")
+client = Groq(api_key=api_key)
 
 TONE_INSTRUCTIONS = {
     "Technical Expert": "Be detailed and technical. Include root cause analysis where relevant, error codes, and step-by-step troubleshooting. Use precise technical terminology.",
