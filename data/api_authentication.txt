@@ -1,0 +1,36 @@
+API Authentication Guide
+
+Overview:
+Our REST API uses API Key authentication. All requests must include your API key in the request header.
+
+Getting Your API Key:
+1. Log in to your account dashboard.
+2. Navigate to Settings > Developer > API Keys.
+3. Click "Generate New Key".
+4. Copy and store the key securely. It will not be shown again.
+
+Using the API Key:
+Include the key in every request header:
+Authorization: Bearer YOUR_API_KEY
+
+Example Request:
+GET https://api.company.com/v1/users
+Headers:
+  Authorization: Bearer sk_live_abc123xyz
+
+Error Codes:
+- 401 Unauthorized: API key is missing or invalid. Regenerate your key.
+- 403 Forbidden: Your plan does not have access to this endpoint.
+- 429 Too Many Requests: You have exceeded the rate limit. See rate limits guide.
+- 500 Internal Server Error: Server-side issue. Retry after 30 seconds.
+
+OAuth 2.0 (Enterprise Only):
+Enterprise customers can use OAuth 2.0 for user-level authentication. Contact support for OAuth credentials and setup documentation.
+
+Key Security:
+- Never expose API keys in frontend code or public repositories.
+- Rotate keys immediately if you suspect they have been compromised.
+- Use environment variables to store keys in your applications.
+
+Webhook Signatures:
+All webhook payloads include an X-Signature header for verification. Compare it against an HMAC-SHA256 hash of the raw payload using your webhook secret.

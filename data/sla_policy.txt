@@ -1,0 +1,29 @@
+Service Level Agreement (SLA) Policy
+
+This document applies to Enterprise Plan customers only.
+
+Uptime Guarantee:
+We guarantee 99.9% monthly uptime for all core services. This equates to no more than 43.8 minutes of downtime per month.
+
+Downtime Definition:
+Downtime is defined as the service being completely unavailable for more than 5 consecutive minutes. Scheduled maintenance windows are excluded.
+
+Scheduled Maintenance:
+Maintenance is performed on the first Sunday of each month between 2:00 AM and 4:00 AM UTC. Customers are notified 7 days in advance via email.
+
+SLA Credits:
+If uptime falls below 99.9%, customers are entitled to service credits:
+- 99.0% to 99.9% uptime: 10% credit of monthly fee
+- 95.0% to 99.0% uptime: 25% credit of monthly fee
+- Below 95.0% uptime: 50% credit of monthly fee
+
+Credits must be requested within 30 days of the incident via billing@company.com.
+
+Support Response Times (Enterprise):
+- Critical (service down): 1-hour response, 4-hour resolution target
+- High (major feature broken): 4-hour response, 8-hour resolution target
+- Medium (minor issue): 8-hour response, 24-hour resolution target
+- Low (general questions): 24-hour response
+
+Status Page:
+Current and historical uptime is available at status.company.com. Subscribe to status updates to receive notifications of incidents.

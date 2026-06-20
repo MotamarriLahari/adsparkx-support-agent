@@ -1,0 +1,31 @@
+Data Export Guide
+
+You can export your account data at any time from the dashboard.
+
+What Can Be Exported:
+- User and team data (CSV)
+- Project and task data (CSV or JSON)
+- Analytics reports (CSV or PDF)
+- Billing history and invoices (PDF)
+- API usage logs (JSON)
+
+How to Export:
+1. Go to Account Settings > Data > Export.
+2. Select the data type you want to export.
+3. Choose the date range (optional).
+4. Select format: CSV, JSON, or PDF.
+5. Click "Request Export".
+6. You will receive an email with a download link within 15 minutes.
+7. The download link expires after 24 hours.
+
+Large Exports:
+Exports over 1GB are split into multiple files. All files are included in the same download email as a ZIP archive.
+
+Automated Exports:
+Professional and Enterprise customers can schedule automated exports via Settings > Data > Scheduled Exports. Choose daily, weekly, or monthly frequency.
+
+GDPR Data Requests:
+For personal data export requests under GDPR, email privacy@company.com with subject "GDPR Data Request". Requests are fulfilled within 30 days as required by law.
+
+Data Deletion:
+To permanently delete your account data, go to Account Settings > Data > Delete Account. This action is irreversible. All data is deleted within 72 hours.

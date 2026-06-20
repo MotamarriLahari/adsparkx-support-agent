@@ -1,0 +1,40 @@
+Webhook Configuration Guide
+
+Webhooks allow our platform to send real-time notifications to your server when events occur.
+
+Available Webhook Events:
+- user.created — New user added to account
+- user.deleted — User removed from account
+- payment.success — Subscription payment succeeded
+- payment.failed — Payment failed
+- project.completed — A project was marked complete
+- api.limit_warning — API usage reached 80% of daily limit
+
+Setting Up a Webhook:
+1. Go to Settings > Developer > Webhooks.
+2. Click "Add Webhook".
+3. Enter your server's HTTPS endpoint URL.
+4. Select the events you want to receive.
+5. Click Save. A test event will be sent immediately.
+
+Webhook Payload Format:
+{
+  "event": "payment.success",
+  "timestamp": "2024-01-15T10:30:00Z",
+  "data": { ... event-specific data ... }
+}
+
+Verifying Webhook Signatures:
+Each request includes an X-Signature header. Verify it using:
+HMAC-SHA256(raw_payload, your_webhook_secret)
+If signatures don't match, reject the request — it may be fraudulent.
+
+Retry Policy:
+If your server returns anything other than HTTP 200, we retry the webhook:
+- Retry 1: After 5 minutes
+- Retry 2: After 30 minutes
+- Retry 3: After 2 hours
+After 3 failed retries, the webhook event is marked as failed.
+
+Debugging:
+View all webhook delivery attempts and payloads in Settings > Developer > Webhook Logs. You can manually resend any failed event.

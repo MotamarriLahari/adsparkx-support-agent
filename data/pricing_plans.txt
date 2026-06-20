@@ -1,0 +1,40 @@
+Pricing Plans and Features
+
+Starter Plan — $29/month
+- Up to 3 team members
+- 10GB cloud storage
+- Basic analytics dashboard
+- Email support (48-hour response time)
+- API access: 1,000 requests/day
+- Suitable for freelancers and small teams
+
+Professional Plan — $79/month
+- Up to 15 team members
+- 50GB cloud storage
+- Advanced analytics and reporting
+- Priority email and chat support (8-hour response time)
+- API access: 10,000 requests/day
+- Webhook integrations
+- Custom branding
+- Suitable for growing businesses
+
+Enterprise Plan — $199/month
+- Unlimited team members
+- 500GB cloud storage
+- Full analytics suite with export
+- Dedicated account manager
+- 24/7 phone, email, and chat support (1-hour response SLA)
+- API access: 100,000 requests/day
+- SSO and SAML integration
+- Custom contract and invoicing
+- SLA with 99.9% uptime guarantee
+- Suitable for large organizations
+
+Plan Upgrades:
+You can upgrade at any time from Account Settings > Billing. The new plan activates immediately and you are charged a prorated amount for the remainder of the billing cycle.
+
+Plan Downgrades:
+Downgrades take effect at the start of the next billing cycle. Data exceeding new plan limits must be reduced before downgrade.
+
+Free Trial:
+A 14-day free trial of the Professional Plan is available for new accounts. No credit card required.

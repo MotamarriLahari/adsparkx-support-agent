@@ -1,0 +1,27 @@
+Billing and Refund Policy
+
+Subscription Plans:
+- Starter Plan: $29/month — up to 3 users, 10GB storage
+- Professional Plan: $79/month — up to 15 users, 50GB storage
+- Enterprise Plan: $199/month — unlimited users, 500GB storage, SLA guarantee
+
+Payment Methods:
+We accept Visa, Mastercard, American Express, and PayPal. All transactions are processed securely via Stripe.
+
+Billing Cycle:
+Subscriptions renew automatically on the same date each month. You will receive an invoice via email 3 days before each renewal.
+
+Refund Policy:
+- Refunds are available within 7 days of the initial purchase only.
+- Monthly subscriptions are non-refundable after the 7-day window.
+- Annual plans can be refunded within 30 days pro-rated for unused months.
+- Refund requests must be submitted via email to billing@company.com.
+
+Cancellation:
+You can cancel your subscription at any time from Account Settings > Billing > Cancel Subscription. Access continues until end of the current billing period.
+
+Disputed Charges:
+If you believe you were charged incorrectly, email billing@company.com within 14 days with your invoice number. Disputes are resolved within 5 business days.
+
+Tax:
+Applicable taxes are added based on your billing address. VAT customers in the EU must provide a valid VAT number to be exempted.

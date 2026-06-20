@@ -1,0 +1,32 @@
+Account Suspension Policy
+
+Why Accounts Get Suspended:
+
+1. Payment Failure: If a payment fails and is not resolved within 7 days, the account is suspended. All data is retained for 30 days during suspension.
+
+2. Terms of Service Violation: Accounts that violate our Terms of Service are suspended immediately. Common violations include:
+   - Sending spam through our platform
+   - Exceeding API rate limits repeatedly
+   - Using the service for illegal activities
+   - Unauthorized reselling of access
+
+3. Security Risk: If suspicious activity is detected (e.g., compromised credentials, unusual login locations), accounts may be temporarily suspended to protect your data.
+
+How to Reactivate a Suspended Account:
+
+Payment Failure Suspension:
+- Update your payment method in Account Settings > Billing > Payment Methods.
+- Outstanding balance will be charged automatically.
+- Account reactivates within 1 hour of successful payment.
+
+Terms of Service Suspension:
+- Email appeals@company.com with subject "Account Suspension Appeal".
+- Include your account email and a description of the situation.
+- Appeals are reviewed within 3 business days.
+
+Security Suspension:
+- Contact support@company.com to verify your identity.
+- You will be asked to confirm recent account activity.
+
+Data Retention:
+Suspended accounts retain all data for 30 days. After 30 days, data may be permanently deleted. Export your data before suspension takes effect.

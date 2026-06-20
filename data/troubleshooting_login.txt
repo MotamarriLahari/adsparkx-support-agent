@@ -1,0 +1,33 @@
+Login Troubleshooting Guide
+
+If you are experiencing issues logging in, follow this guide before contacting support.
+
+Issue 1: Incorrect Password
+Solution: Use the "Forgot Password" link on the login page to reset your password.
+
+Issue 2: Account Locked
+Cause: 5 or more failed login attempts lock the account for 30 minutes.
+Solution: Wait 30 minutes and try again, or contact support for immediate unlock.
+
+Issue 3: Two-Factor Authentication (2FA) Not Working
+- Ensure your authenticator app time is synced correctly.
+- Use a backup code if you have lost access to your authenticator device.
+- If all backup codes are used, contact support with your registered email and ID.
+
+Issue 4: Browser Issues
+- Clear browser cache and cookies, then try again.
+- Try a different browser (Chrome, Firefox, Edge).
+- Disable browser extensions, especially ad blockers.
+- Try incognito/private browsing mode.
+
+Issue 5: SSO Login Failure (Enterprise)
+- Confirm your organization's SSO is correctly configured by your IT admin.
+- Verify that your email domain is whitelisted in your SSO provider settings.
+- Check with your IT team that your account is active in the identity provider.
+
+Issue 6: Page Not Loading
+- Check your internet connection.
+- Try accessing from a different network or device.
+- Visit our status page at status.company.com to check for outages.
+
+If none of these steps resolve your issue, contact support@company.com with your account email, browser version, and a screenshot of any error message.

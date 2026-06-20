@@ -1,0 +1,32 @@
+API Rate Limits
+
+Rate limits control how many API requests you can make within a given time period.
+
+Rate Limits by Plan:
+- Starter Plan: 1,000 requests per day, max 10 requests per second
+- Professional Plan: 10,000 requests per day, max 50 requests per second
+- Enterprise Plan: 100,000 requests per day, max 200 requests per second
+
+Rate Limit Headers:
+Every API response includes these headers:
+- X-RateLimit-Limit: Your daily request limit
+- X-RateLimit-Remaining: Requests remaining today
+- X-RateLimit-Reset: Unix timestamp when the limit resets (midnight UTC)
+
+When You Hit a Rate Limit:
+The API returns HTTP 429 Too Many Requests with body:
+{ "error": "rate_limit_exceeded", "retry_after": 60 }
+
+The retry_after value is in seconds. Wait that long before retrying.
+
+Best Practices:
+- Implement exponential backoff when you receive 429 errors.
+- Cache API responses where possible to reduce redundant calls.
+- Use bulk endpoints instead of making many individual requests.
+- Monitor your usage via the Developer Dashboard.
+
+Burst Allowance:
+All plans include a burst allowance of 2x the per-second limit for up to 10 seconds. This handles sudden traffic spikes.
+
+Increasing Limits:
+To request higher rate limits, contact sales@company.com. Enterprise customers can negotiate custom limits in their contract.
